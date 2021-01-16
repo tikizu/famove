@@ -1,16 +1,20 @@
 Package: famove
-Title: What the Package Does (One Line, Title Case)
+Title: Summarize and Map Fatal Motor Vehicle Accidents in the US by Year
 Version: 0.0.0.9000
 Authors@R: 
-    person(given = "First",
-           family = "Last",
+    person(given = "Tiina",
+           family = "Kirsilä",
            role = c("aut", "cre"),
-           email = "first.last@example.com",
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to
-    pick a license
+           email = "tiina.kirsila@gmail.com")
+Description: Final assignment of the Coursera course Building R Packages. The package reads in a CSV data and summarizes and maps fatal motor vehicle accidents in the US by selected year(s).
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1
+Suggests: 
+    testthat (>= 2.0.0)
+Config/testthat/edition: 2
+Imports: 
+    readr,
+    dplyr
