@@ -2,7 +2,7 @@
 #'
 #' Create a tibble from CSV file
 #'
-#' @param filename as a character. Has to contain the file extension
+#' @param filename as a character
 #'
 #' @return tibble
 #'

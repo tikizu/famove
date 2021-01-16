@@ -7,7 +7,7 @@
 fars_read(filename)
 }
 \arguments{
-\item{filename}{as a character. Has to contain the file extension}
+\item{filename}{as a character}
 }
 \value{
 tibble
