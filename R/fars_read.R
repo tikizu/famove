@@ -7,20 +7,20 @@
 #' @return tibble
 #'
 #' @importFrom readr read_csv
-#' @importFrom dplyr tbl_df
+#' @importFrom dplyr as_tibble
 #'
-#' @export
 #'
 #' @examples
-#' filefromfamove <- system.file("extdata", "accident_2013.csv.bz2", package = "famove")
+#' filefromfamove <- system.file("extdata", "accident_2014.csv.bz2", package = "famove")
 #' fars_read(filefromfamove)
 #'
-#'
+#' @export
+
 fars_read <- function(filename) {
   if(!file.exists(filename))
     stop("file '", filename, "' does not exist")
   data <- suppressMessages({
     readr::read_csv(filename, progress = FALSE)
   })
-  dplyr::tbl_df(data)
+  dplyr::as_tibble(data)
 }
