@@ -19,5 +19,7 @@ Suggests:
 Config/testthat/edition: 2
 Imports: 
     readr,
-    dplyr
+    dplyr,
+    maps,
+    tidyr
 VignetteBuilder: knitr
