@@ -4,7 +4,7 @@
 #' @return a CSV filename as a character string
 #'
 #' @examples
-#' make_filename(2013)
+#' make_filename(2014)
 #'
 #' @export
 make_filename <- function(year) {

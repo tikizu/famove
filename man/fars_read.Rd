@@ -16,8 +16,7 @@ tibble
 Create a tibble from CSV file
 }
 \examples{
-filefromfamove <- system.file("extdata", "accident_2013.csv.bz2", package = "famove")
+filefromfamove <- system.file("extdata", "accident_2014.csv.bz2", package = "famove")
 fars_read(filefromfamove)
-
 
 }

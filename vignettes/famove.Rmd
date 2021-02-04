@@ -1,8 +1,8 @@
 ---
-title: "famove"
+title: "Documentation for famove package"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{famove}
+  %\VignetteIndexEntry{Documentation for famove package}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
@@ -15,5 +15,24 @@ knitr::opts_chunk$set(
 ```
 
 ```{r setup}
+devtools::load_all()
+
 library(famove)
 ```
+
+# General informations
+
+This package is buld as part of final assignment in [Coursera](https://www.coursera.org/) course [Building R Packages](https://www.coursera.org/learn/r-packages) by Johns Hopkins University. The functions were provided in the course.
+
+The goal of this document is introduce the famove package. The main purpose of famove is to summarize and map fatal motor vehicle accidents in the US by year.
+
+## Summary
+
+Summary of the number of people killed in motor vehicle accidents in the US by given year per month can be performed with the `fars_summarize_years` function
+
+```{r}
+filefromfamove <- system.file("extdata", "accident_2014.csv.bz2", package = "famove")
+fars_read(filefromfamove)
+# fars_summarize_years(2014)
+```
+
