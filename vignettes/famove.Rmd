@@ -29,6 +29,6 @@ Map the location of fatal motor vehicle accidents in selected state in the US by
 
 ```{r eval=FALSE}
 fars_summarize_years(2014)
-fars_map_state(35,2014)
+fars_map_state(5,2014)
 ```
 
