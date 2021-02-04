@@ -14,11 +14,6 @@ knitr::opts_chunk$set(
 )
 ```
 
-```{r setup}
-devtools::load_all()
-
-library(famove)
-```
 
 # General informations
 
@@ -28,11 +23,12 @@ The goal of this document is introduce the famove package. The main purpose of f
 
 ## Summary
 
-Summary of the number of people killed in motor vehicle accidents in the US by given year per month can be performed with the `fars_summarize_years` function
+Summary of the number of people killed in motor vehicle accidents in the US by given year per month can be performed with the `fars_summarize_years` function.
 
-```{r}
-filefromfamove <- system.file("extdata", "accident_2014.csv.bz2", package = "famove")
-fars_read(filefromfamove)
-# fars_summarize_years(2014)
+Map the location of fatal motor vehicle accidents in selected state in the US by given year can be produced with the `fars_map_state` function.
+
+```{r eval=FALSE}
+fars_summarize_years(2014)
+fars_map_state(35,2014)
 ```
 
