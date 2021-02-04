@@ -13,8 +13,10 @@
 #' @importFrom graphics points
 #'
 #' @examples
+#' \donttest{
 #' fars_map_state(15, 2014)
 #' fars_map_state(35, 2014)
+#' }
 #'
 #' @export
 fars_map_state <- function(state.num, year) {

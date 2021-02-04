@@ -10,8 +10,9 @@
 #' @importFrom tidyr spread
 #'
 #' @examples
+#' \donttest{
 #' fars_summarize_years(2014)
-#' fars_summarize_years(c(2013,2014,2015))
+#' }
 #'
 #' @export
 fars_summarize_years <- function(years) {

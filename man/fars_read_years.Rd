@@ -19,6 +19,8 @@ reads in years from a data frame.
 Will return an error if given year is invalid.
 }
 \examples{
+\donttest{
 fars_read_years(2014)
 fars_read_years(c(2014,2013,2015))
+}
 }

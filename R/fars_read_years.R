@@ -10,8 +10,10 @@
 #' @importFrom dplyr select
 #'
 #' @examples
+#' \donttest{
 #' fars_read_years(2014)
-#' fars_read_years(c(2014,2013,2015))
+#' }
+#'
 #' @export
 fars_read_years <- function(years) {
   lapply(years, function(year) {

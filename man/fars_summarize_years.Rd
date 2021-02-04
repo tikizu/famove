@@ -16,7 +16,8 @@ This function returns a number of envents summary table as tibble grouped by mon
 Summarize the number of people killed in motor vehicle accidents in the US by given year and month
 }
 \examples{
+\donttest{
 fars_summarize_years(2014)
 fars_summarize_years(c(2013,2014,2015))
-
+}
 }

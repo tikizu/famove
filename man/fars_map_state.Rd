@@ -26,7 +26,8 @@ Will return a message saying "no accidents to plot" if there were no
 accidents in the state in the year requested
 }
 \examples{
+\donttest{
 fars_map_state(15, 2014)
 fars_map_state(35, 2014)
-
+}
 }
