@@ -8,6 +8,8 @@
 #'
 #' @importFrom dplyr mutate
 #' @importFrom dplyr select
+#' @importFrom magrittr %>%
+#' @importFrom rlang .data
 #'
 #'
 #' @export
@@ -17,7 +19,7 @@ fars_read_years <- function(years) {
     tryCatch({
       dat <- fars_read(file)
       dplyr::mutate(dat, year = year) %>%
-        dplyr::select(MONTH, year)
+        dplyr::select(.data$MONTH, .data$year)
     }, error = function(e) {
       warning("invalid year: ", year)
       return(NULL)

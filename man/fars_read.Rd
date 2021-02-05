@@ -15,9 +15,3 @@ tibble
 \description{
 Create a tibble from CSV file
 }
-\examples{
-\donttest{
-filefromfamove <- system.file("extdata", "accident_2014.csv.bz2", package = "famove")
-fars_read(filefromfamove)
-}
-}

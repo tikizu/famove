@@ -15,8 +15,3 @@ a CSV filename as a character string
 \description{
 Create character string containing a file name
 }
-\examples{
-\donttest{
-make_filename(2014)
-}
-}

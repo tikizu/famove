@@ -8,13 +8,15 @@
 #' @importFrom dplyr summarize
 #' @importFrom dplyr n
 #' @importFrom tidyr spread
+#' @importFrom magrittr %>%
+#' @importFrom rlang .data
 #'
 #'
 #' @export
 fars_summarize_years <- function(years) {
   dat_list <- fars_read_years(years)
   dplyr::bind_rows(dat_list) %>%
-    dplyr::group_by(year, MONTH) %>%
+    dplyr::group_by(.data$year, .data$MONTH) %>%
     dplyr::summarize(n= dplyr::n()) %>%
-    tidyr::spread(year, n)
+    tidyr::spread(.data$year, .data$n)
 }
