@@ -11,9 +11,11 @@
 #'
 #'
 #' @examples
-#' \donttest{
+#' \dontrun{
+#' if(interactive()){
 #' filefromfamove <- system.file("extdata", "accident_2014.csv.bz2", package = "famove")
 #' fars_read(filefromfamove)
+#' }
 #' }
 #' @export
 

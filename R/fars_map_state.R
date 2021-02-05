@@ -13,9 +13,11 @@
 #' @importFrom graphics points
 #'
 #' @examples
-#' \donttest{
+#' \dontrun{
+#' if(interactive()){
 #' fars_map_state(5, 2014)
 #' fars_map_state(35, 2014)
+#' }
 #' }
 #'
 #' @export

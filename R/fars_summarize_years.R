@@ -10,8 +10,10 @@
 #' @importFrom tidyr spread
 #'
 #' @examples
-#' \donttest{
+#' \dontrun{
+#' if(interactive()){
 #' fars_summarize_years(2014)
+#' }
 #' }
 #'
 #' @export

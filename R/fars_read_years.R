@@ -10,8 +10,10 @@
 #' @importFrom dplyr select
 #'
 #' @examples
-#' \donttest{
+#' \dontrun{
+#' if(interactive()){
 #' fars_read_years(2014)
+#' }
 #' }
 #'
 #' @export
