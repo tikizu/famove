@@ -9,12 +9,6 @@
 #' @importFrom dplyr mutate
 #' @importFrom dplyr select
 #'
-#' @examples
-#' \dontrun{
-#' if(interactive()){
-#' fars_read_years(2014)
-#' }
-#' }
 #'
 #' @export
 fars_read_years <- function(years) {

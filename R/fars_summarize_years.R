@@ -9,12 +9,6 @@
 #' @importFrom dplyr n
 #' @importFrom tidyr spread
 #'
-#' @examples
-#' \dontrun{
-#' if(interactive()){
-#' fars_summarize_years(2014)
-#' }
-#' }
 #'
 #' @export
 fars_summarize_years <- function(years) {

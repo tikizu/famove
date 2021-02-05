@@ -10,13 +10,6 @@
 #' @importFrom dplyr as_tibble
 #'
 #'
-#' @examples
-#' \dontrun{
-#' if(interactive()){
-#' filefromfamove <- system.file("extdata", "accident_2014.csv.bz2", package = "famove")
-#' fars_read(filefromfamove)
-#' }
-#' }
 #' @export
 
 fars_read <- function(filename) {

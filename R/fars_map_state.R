@@ -12,14 +12,6 @@
 #' @importFrom maps map
 #' @importFrom graphics points
 #'
-#' @examples
-#' \dontrun{
-#' if(interactive()){
-#' fars_map_state(5, 2014)
-#' fars_map_state(35, 2014)
-#' }
-#' }
-#'
 #' @export
 fars_map_state <- function(state.num, year) {
   filename <- make_filename(year)
